@@ -11,7 +11,7 @@ public final class Ejercicio01Configuracion {
     private final Properties values = new Properties();
 
     private Ejercicio01Configuracion() {
-        Path file = Path.of("config.properties");
+        Path file = Path.of("src", "config.properties");
         try (InputStream input = Files.newInputStream(file)) {
             values.load(input);
         } catch (IOException exception) {
